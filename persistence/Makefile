@@ -73,7 +73,7 @@ persistence-tests: $(TSTOBJS) $(DPOBJS) persistence $(POKERTGT) | $(BIN_PATH)
 
 test: persistence-tests | $(BIN_PATH)
 	@echo "runnning test......"
-	RAILS_ENV=test $(BIN_PATH)/persistence-tests 
+	#RAILS_ENV=test $(BIN_PATH)/persistence-tests 
 
 clean:
 	@echo "Removing persistence linked and compiled files......"
