@@ -1,0 +1,42 @@
+#
+bin/
+obj/
+*/log/*
+#lib/
+node_modules/
+android/include/
+android/**/src
+android/**/proto
+ios/include/
+ios/**/src
+ios/**/proto
+.idea/
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.d
+
+# Compiled Dynamic libraries
+#*.so
+#*.dylib
+
+# Compiled Static libraries
+#*.lai
+#*.la
+libmrock*
+libpersistenc*
+
+# other
+msg.pb.h
+msg.pb.cc
+
+*.DS_Store
+*.tgz
+.*.sw*
+core
+
+# exception
+!/bin
+.settings/

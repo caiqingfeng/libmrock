@@ -1,0 +1,2749 @@
+Determining size of __int8 failed with the following output:
+Change Dir: /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4033595768/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec4033595768.dir/build.make CMakeFiles/cmTryCompileExec4033595768.dir/build
+/usr/local/Cellar/cmake/3.1.1_1/bin/cmake -E cmake_progress_report /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4033595768.dir/HAVE_MS_INT8.c.o
+/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk   -o CMakeFiles/cmTryCompileExec4033595768.dir/HAVE_MS_INT8.c.o   -c /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:19:12: error: use of undeclared identifier '__int8'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int8))
+                     ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:20:12: error: use of undeclared identifier '__int8'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int8))
+                     ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:21:12: error: use of undeclared identifier '__int8'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int8))
+                     ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:22:12: error: use of undeclared identifier '__int8'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int8))
+                     ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:23:12: error: use of undeclared identifier '__int8'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int8))
+                     ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec4033595768.dir/HAVE_MS_INT8.c.o] Error 1
+make: *** [cmTryCompileExec4033595768/fast] Error 2
+
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int8))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int8 failed with the following output:
+Change Dir: /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1311475761/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1311475761.dir/build.make CMakeFiles/cmTryCompileExec1311475761.dir/build
+/usr/local/Cellar/cmake/3.1.1_1/bin/cmake -E cmake_progress_report /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1311475761.dir/HAVE_MS_UINT8.c.o
+/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk   -o CMakeFiles/cmTryCompileExec1311475761.dir/HAVE_MS_UINT8.c.o   -c /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:19:12: error: expected ')'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int8))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:19:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int8))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:20:12: error: expected ')'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int8))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:20:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int8))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:21:12: error: expected ')'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int8))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:21:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int8))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:22:12: error: expected ')'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int8))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:22:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int8))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:12: error: expected ')'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int8))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int8))
+                    ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1311475761.dir/HAVE_MS_UINT8.c.o] Error 1
+make: *** [cmTryCompileExec1311475761/fast] Error 2
+
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int8))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int16 failed with the following output:
+Change Dir: /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1419860539/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1419860539.dir/build.make CMakeFiles/cmTryCompileExec1419860539.dir/build
+/usr/local/Cellar/cmake/3.1.1_1/bin/cmake -E cmake_progress_report /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1419860539.dir/HAVE_MS_INT16.c.o
+/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk   -o CMakeFiles/cmTryCompileExec1419860539.dir/HAVE_MS_INT16.c.o   -c /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:19:12: error: use of undeclared identifier '__int16'; did you mean '__int16_t'?
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int16))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:42:17: note: '__int16_t' declared here
+typedef short                   __int16_t;
+                                ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:20:12: error: use of undeclared identifier '__int16'; did you mean '__int16_t'?
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int16))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:42:17: note: '__int16_t' declared here
+typedef short                   __int16_t;
+                                ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:21:12: error: use of undeclared identifier '__int16'; did you mean '__int16_t'?
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int16))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:42:17: note: '__int16_t' declared here
+typedef short                   __int16_t;
+                                ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:22:12: error: use of undeclared identifier '__int16'; did you mean '__int16_t'?
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int16))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:42:17: note: '__int16_t' declared here
+typedef short                   __int16_t;
+                                ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:23:12: error: use of undeclared identifier '__int16'; did you mean '__int16_t'?
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int16))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:42:17: note: '__int16_t' declared here
+typedef short                   __int16_t;
+                                ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1419860539.dir/HAVE_MS_INT16.c.o] Error 1
+make: *** [cmTryCompileExec1419860539/fast] Error 2
+
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int16))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int16 failed with the following output:
+Change Dir: /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3985904288/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec3985904288.dir/build.make CMakeFiles/cmTryCompileExec3985904288.dir/build
+/usr/local/Cellar/cmake/3.1.1_1/bin/cmake -E cmake_progress_report /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3985904288.dir/HAVE_MS_UINT16.c.o
+/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk   -o CMakeFiles/cmTryCompileExec3985904288.dir/HAVE_MS_UINT16.c.o   -c /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:19:12: error: expected ')'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:19:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:20:12: error: expected ')'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:20:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:21:12: error: expected ')'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:21:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:22:12: error: expected ')'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:22:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:12: error: expected ')'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int16))
+                    ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3985904288.dir/HAVE_MS_UINT16.c.o] Error 1
+make: *** [cmTryCompileExec3985904288/fast] Error 2
+
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int16))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int32 failed with the following output:
+Change Dir: /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1884540872/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec1884540872.dir/build.make CMakeFiles/cmTryCompileExec1884540872.dir/build
+/usr/local/Cellar/cmake/3.1.1_1/bin/cmake -E cmake_progress_report /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1884540872.dir/HAVE_MS_INT32.c.o
+/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk   -o CMakeFiles/cmTryCompileExec1884540872.dir/HAVE_MS_INT32.c.o   -c /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:19:12: error: use of undeclared identifier '__int32'; did you mean '__int32_t'?
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int32))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:44:15: note: '__int32_t' declared here
+typedef int                     __int32_t;
+                                ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:20:12: error: use of undeclared identifier '__int32'; did you mean '__int32_t'?
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int32))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:44:15: note: '__int32_t' declared here
+typedef int                     __int32_t;
+                                ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:21:12: error: use of undeclared identifier '__int32'; did you mean '__int32_t'?
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int32))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:44:15: note: '__int32_t' declared here
+typedef int                     __int32_t;
+                                ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:22:12: error: use of undeclared identifier '__int32'; did you mean '__int32_t'?
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int32))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:44:15: note: '__int32_t' declared here
+typedef int                     __int32_t;
+                                ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:23:12: error: use of undeclared identifier '__int32'; did you mean '__int32_t'?
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int32))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:44:15: note: '__int32_t' declared here
+typedef int                     __int32_t;
+                                ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1884540872.dir/HAVE_MS_INT32.c.o] Error 1
+make: *** [cmTryCompileExec1884540872/fast] Error 2
+
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int32))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int32 failed with the following output:
+Change Dir: /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec224159799/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec224159799.dir/build.make CMakeFiles/cmTryCompileExec224159799.dir/build
+/usr/local/Cellar/cmake/3.1.1_1/bin/cmake -E cmake_progress_report /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec224159799.dir/HAVE_MS_UINT32.c.o
+/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk   -o CMakeFiles/cmTryCompileExec224159799.dir/HAVE_MS_UINT32.c.o   -c /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:19:12: error: expected ')'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int32))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:19:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int32))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:20:12: error: expected ')'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int32))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:20:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int32))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:21:12: error: expected ')'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int32))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:21:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int32))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:22:12: error: expected ')'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int32))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:22:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int32))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:12: error: expected ')'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int32))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int32))
+                    ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec224159799.dir/HAVE_MS_UINT32.c.o] Error 1
+make: *** [cmTryCompileExec224159799/fast] Error 2
+
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int32))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int64 failed with the following output:
+Change Dir: /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec358299678/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec358299678.dir/build.make CMakeFiles/cmTryCompileExec358299678.dir/build
+/usr/local/Cellar/cmake/3.1.1_1/bin/cmake -E cmake_progress_report /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec358299678.dir/HAVE_MS_INT64.c.o
+/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk   -o CMakeFiles/cmTryCompileExec358299678.dir/HAVE_MS_INT64.c.o   -c /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:19:12: error: use of undeclared identifier '__int64'; did you mean '__int64_t'?
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:46:20: note: '__int64_t' declared here
+typedef long long               __int64_t;
+                                ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:20:12: error: use of undeclared identifier '__int64'; did you mean '__int64_t'?
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:46:20: note: '__int64_t' declared here
+typedef long long               __int64_t;
+                                ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:21:12: error: use of undeclared identifier '__int64'; did you mean '__int64_t'?
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:46:20: note: '__int64_t' declared here
+typedef long long               __int64_t;
+                                ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:22:12: error: use of undeclared identifier '__int64'; did you mean '__int64_t'?
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:46:20: note: '__int64_t' declared here
+typedef long long               __int64_t;
+                                ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:23:12: error: use of undeclared identifier '__int64'; did you mean '__int64_t'?
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(__int64))
+                     ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/i386/_types.h:46:20: note: '__int64_t' declared here
+typedef long long               __int64_t;
+                                ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec358299678.dir/HAVE_MS_INT64.c.o] Error 1
+make: *** [cmTryCompileExec358299678/fast] Error 2
+
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int64 failed with the following output:
+Change Dir: /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2517970933/fast"
+/Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTryCompileExec2517970933.dir/build.make CMakeFiles/cmTryCompileExec2517970933.dir/build
+/usr/local/Cellar/cmake/3.1.1_1/bin/cmake -E cmake_progress_report /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2517970933.dir/HAVE_MS_UINT64.c.o
+/usr/bin/cc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk   -o CMakeFiles/cmTryCompileExec2517970933.dir/HAVE_MS_UINT64.c.o   -c /Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:19:12: error: expected ')'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int64))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:19:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int64))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:20:12: error: expected ')'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int64))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:20:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int64))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:21:12: error: expected ')'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int64))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:21:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int64))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:22:12: error: expected ')'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int64))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:22:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int64))
+                    ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:12: error: expected ')'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:17:31: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int64))
+                              ^
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:12: note: to match this '('
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:17:21: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(unsigned __int64))
+                    ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2517970933.dir/HAVE_MS_UINT64.c.o] Error 1
+make: *** [cmTryCompileExec2517970933/fast] Error 2
+
+/Users/caiqingfeng/Desktop/tools/development_on_mac/dbc/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int8 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1f668/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1f668.dir/build.make CMakeFiles/cmTC_1f668.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1f668.dir/HAVE_MS_INT8.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_1f668.dir/HAVE_MS_INT8.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:23:22: error: ‘__int8’ undeclared here (not in a function); did you mean ‘u_int’?
+ #define SIZE (sizeof(__int8))
+                      ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_1f668.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_1f668.dir/HAVE_MS_INT8.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_1f668.dir/HAVE_MS_INT8.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_1f668/fast' failed
+make: *** [cmTC_1f668/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int8))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int8 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bb436/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bb436.dir/build.make CMakeFiles/cmTC_bb436.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_bb436.dir/HAVE_MS_UINT8.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bb436.dir/HAVE_MS_UINT8.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:26:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 1000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:27:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 100)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:28:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:29:12: note: in expansion of macro ‘SIZE’
+   ('0' +  (SIZE    % 10)),
+            ^~~~
+CMakeFiles/cmTC_bb436.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_bb436.dir/HAVE_MS_UINT8.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_bb436.dir/HAVE_MS_UINT8.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_bb436/fast' failed
+make: *** [cmTC_bb436/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int8))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int16 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_66ff2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_66ff2.dir/build.make CMakeFiles/cmTC_66ff2.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_66ff2.dir/HAVE_MS_INT16.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_66ff2.dir/HAVE_MS_INT16.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:23:22: error: ‘__int16’ undeclared here (not in a function); did you mean ‘__int16_t’?
+ #define SIZE (sizeof(__int16))
+                      ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_66ff2.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_66ff2.dir/HAVE_MS_INT16.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_66ff2.dir/HAVE_MS_INT16.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_66ff2/fast' failed
+make: *** [cmTC_66ff2/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int16))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int16 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_502c5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_502c5.dir/build.make CMakeFiles/cmTC_502c5.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_502c5.dir/HAVE_MS_UINT16.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_502c5.dir/HAVE_MS_UINT16.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:26:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 1000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:27:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 100)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:28:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:29:12: note: in expansion of macro ‘SIZE’
+   ('0' +  (SIZE    % 10)),
+            ^~~~
+CMakeFiles/cmTC_502c5.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_502c5.dir/HAVE_MS_UINT16.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_502c5.dir/HAVE_MS_UINT16.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_502c5/fast' failed
+make: *** [cmTC_502c5/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int16))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int32 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_099f1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_099f1.dir/build.make CMakeFiles/cmTC_099f1.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_099f1.dir/HAVE_MS_INT32.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_099f1.dir/HAVE_MS_INT32.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:23:22: error: ‘__int32’ undeclared here (not in a function); did you mean ‘__int32_t’?
+ #define SIZE (sizeof(__int32))
+                      ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_099f1.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_099f1.dir/HAVE_MS_INT32.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_099f1.dir/HAVE_MS_INT32.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_099f1/fast' failed
+make: *** [cmTC_099f1/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int32))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int32 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_40acc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_40acc.dir/build.make CMakeFiles/cmTC_40acc.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_40acc.dir/HAVE_MS_UINT32.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_40acc.dir/HAVE_MS_UINT32.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:26:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 1000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:27:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 100)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:28:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:29:12: note: in expansion of macro ‘SIZE’
+   ('0' +  (SIZE    % 10)),
+            ^~~~
+CMakeFiles/cmTC_40acc.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_40acc.dir/HAVE_MS_UINT32.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_40acc.dir/HAVE_MS_UINT32.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_40acc/fast' failed
+make: *** [cmTC_40acc/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int32))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d878a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d878a.dir/build.make CMakeFiles/cmTC_d878a.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d878a.dir/HAVE_MS_INT64.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d878a.dir/HAVE_MS_INT64.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:23:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_d878a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d878a.dir/HAVE_MS_INT64.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_d878a.dir/HAVE_MS_INT64.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_d878a/fast' failed
+make: *** [cmTC_d878a/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int64 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9e7ee/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9e7ee.dir/build.make CMakeFiles/cmTC_9e7ee.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9e7ee.dir/HAVE_MS_UINT64.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_9e7ee.dir/HAVE_MS_UINT64.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:26:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 1000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:27:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 100)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:28:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:29:12: note: in expansion of macro ‘SIZE’
+   ('0' +  (SIZE    % 10)),
+            ^~~~
+CMakeFiles/cmTC_9e7ee.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_9e7ee.dir/HAVE_MS_UINT64.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_9e7ee.dir/HAVE_MS_UINT64.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_9e7ee/fast' failed
+make: *** [cmTC_9e7ee/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int8 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_16285/fast"
+/usr/bin/make -f CMakeFiles/cmTC_16285.dir/build.make CMakeFiles/cmTC_16285.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_16285.dir/HAVE_MS_INT8.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_16285.dir/HAVE_MS_INT8.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:23:22: error: ‘__int8’ undeclared here (not in a function); did you mean ‘u_int’?
+ #define SIZE (sizeof(__int8))
+                      ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_16285.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_16285.dir/HAVE_MS_INT8.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_16285.dir/HAVE_MS_INT8.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_16285/fast' failed
+make: *** [cmTC_16285/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int8))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int8 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8be8b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8be8b.dir/build.make CMakeFiles/cmTC_8be8b.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8be8b.dir/HAVE_MS_UINT8.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_8be8b.dir/HAVE_MS_UINT8.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:26:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 1000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:27:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 100)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:28:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:29:12: note: in expansion of macro ‘SIZE’
+   ('0' +  (SIZE    % 10)),
+            ^~~~
+CMakeFiles/cmTC_8be8b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8be8b.dir/HAVE_MS_UINT8.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_8be8b.dir/HAVE_MS_UINT8.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_8be8b/fast' failed
+make: *** [cmTC_8be8b/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int8))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int16 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_252ae/fast"
+/usr/bin/make -f CMakeFiles/cmTC_252ae.dir/build.make CMakeFiles/cmTC_252ae.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_252ae.dir/HAVE_MS_INT16.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_252ae.dir/HAVE_MS_INT16.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:23:22: error: ‘__int16’ undeclared here (not in a function); did you mean ‘__int16_t’?
+ #define SIZE (sizeof(__int16))
+                      ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_252ae.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_252ae.dir/HAVE_MS_INT16.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_252ae.dir/HAVE_MS_INT16.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_252ae/fast' failed
+make: *** [cmTC_252ae/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int16))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int16 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3a285/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3a285.dir/build.make CMakeFiles/cmTC_3a285.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3a285.dir/HAVE_MS_UINT16.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_3a285.dir/HAVE_MS_UINT16.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:26:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 1000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:27:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 100)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:28:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:29:12: note: in expansion of macro ‘SIZE’
+   ('0' +  (SIZE    % 10)),
+            ^~~~
+CMakeFiles/cmTC_3a285.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3a285.dir/HAVE_MS_UINT16.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_3a285.dir/HAVE_MS_UINT16.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_3a285/fast' failed
+make: *** [cmTC_3a285/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int16))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int32 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8fe7a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8fe7a.dir/build.make CMakeFiles/cmTC_8fe7a.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8fe7a.dir/HAVE_MS_INT32.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_8fe7a.dir/HAVE_MS_INT32.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:23:22: error: ‘__int32’ undeclared here (not in a function); did you mean ‘__int32_t’?
+ #define SIZE (sizeof(__int32))
+                      ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_8fe7a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8fe7a.dir/HAVE_MS_INT32.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_8fe7a.dir/HAVE_MS_INT32.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_8fe7a/fast' failed
+make: *** [cmTC_8fe7a/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int32))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int32 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c150b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c150b.dir/build.make CMakeFiles/cmTC_c150b.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c150b.dir/HAVE_MS_UINT32.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c150b.dir/HAVE_MS_UINT32.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:26:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 1000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:27:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 100)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:28:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:29:12: note: in expansion of macro ‘SIZE’
+   ('0' +  (SIZE    % 10)),
+            ^~~~
+CMakeFiles/cmTC_c150b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_c150b.dir/HAVE_MS_UINT32.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_c150b.dir/HAVE_MS_UINT32.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_c150b/fast' failed
+make: *** [cmTC_c150b/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int32))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_68d65/fast"
+/usr/bin/make -f CMakeFiles/cmTC_68d65.dir/build.make CMakeFiles/cmTC_68d65.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_68d65.dir/HAVE_MS_INT64.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_68d65.dir/HAVE_MS_INT64.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:23:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_68d65.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_68d65.dir/HAVE_MS_INT64.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_68d65.dir/HAVE_MS_INT64.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_68d65/fast' failed
+make: *** [cmTC_68d65/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int64 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_69c92/fast"
+/usr/bin/make -f CMakeFiles/cmTC_69c92.dir/build.make CMakeFiles/cmTC_69c92.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_69c92.dir/HAVE_MS_UINT64.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_69c92.dir/HAVE_MS_UINT64.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:26:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 1000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:27:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 100)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:28:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:29:12: note: in expansion of macro ‘SIZE’
+   ('0' +  (SIZE    % 10)),
+            ^~~~
+CMakeFiles/cmTC_69c92.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_69c92.dir/HAVE_MS_UINT64.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_69c92.dir/HAVE_MS_UINT64.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_69c92/fast' failed
+make: *** [cmTC_69c92/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int8 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cafd3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cafd3.dir/build.make CMakeFiles/cmTC_cafd3.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_cafd3.dir/HAVE_MS_INT8.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_cafd3.dir/HAVE_MS_INT8.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:23:22: error: ‘__int8’ undeclared here (not in a function); did you mean ‘u_int’?
+ #define SIZE (sizeof(__int8))
+                      ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_cafd3.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_cafd3.dir/HAVE_MS_INT8.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_cafd3.dir/HAVE_MS_INT8.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_cafd3/fast' failed
+make: *** [cmTC_cafd3/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int8))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int8 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d69e3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d69e3.dir/build.make CMakeFiles/cmTC_d69e3.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d69e3.dir/HAVE_MS_UINT8.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d69e3.dir/HAVE_MS_UINT8.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:26:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 1000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:27:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 100)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:28:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:23:31: error: expected ‘)’ before ‘__int8’
+ #define SIZE (sizeof(unsigned __int8))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:29:12: note: in expansion of macro ‘SIZE’
+   ('0' +  (SIZE    % 10)),
+            ^~~~
+CMakeFiles/cmTC_d69e3.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d69e3.dir/HAVE_MS_UINT8.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_d69e3.dir/HAVE_MS_UINT8.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_d69e3/fast' failed
+make: *** [cmTC_d69e3/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT8.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int8))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int16 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c17d2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c17d2.dir/build.make CMakeFiles/cmTC_c17d2.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c17d2.dir/HAVE_MS_INT16.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c17d2.dir/HAVE_MS_INT16.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:23:22: error: ‘__int16’ undeclared here (not in a function); did you mean ‘__int16_t’?
+ #define SIZE (sizeof(__int16))
+                      ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_c17d2.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_c17d2.dir/HAVE_MS_INT16.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_c17d2.dir/HAVE_MS_INT16.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_c17d2/fast' failed
+make: *** [cmTC_c17d2/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int16))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int16 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9bb63/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9bb63.dir/build.make CMakeFiles/cmTC_9bb63.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9bb63.dir/HAVE_MS_UINT16.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_9bb63.dir/HAVE_MS_UINT16.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:26:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 1000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:27:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 100)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:28:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:23:31: error: expected ‘)’ before ‘__int16’
+ #define SIZE (sizeof(unsigned __int16))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:29:12: note: in expansion of macro ‘SIZE’
+   ('0' +  (SIZE    % 10)),
+            ^~~~
+CMakeFiles/cmTC_9bb63.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_9bb63.dir/HAVE_MS_UINT16.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_9bb63.dir/HAVE_MS_UINT16.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_9bb63/fast' failed
+make: *** [cmTC_9bb63/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT16.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int16))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int32 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d6d66/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d6d66.dir/build.make CMakeFiles/cmTC_d6d66.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d6d66.dir/HAVE_MS_INT32.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d6d66.dir/HAVE_MS_INT32.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:23:22: error: ‘__int32’ undeclared here (not in a function); did you mean ‘__int32_t’?
+ #define SIZE (sizeof(__int32))
+                      ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_d6d66.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d6d66.dir/HAVE_MS_INT32.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_d6d66.dir/HAVE_MS_INT32.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_d6d66/fast' failed
+make: *** [cmTC_d6d66/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int32))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int32 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f83be/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f83be.dir/build.make CMakeFiles/cmTC_f83be.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_f83be.dir/HAVE_MS_UINT32.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f83be.dir/HAVE_MS_UINT32.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:26:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 1000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:27:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 100)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:28:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:23:31: error: expected ‘)’ before ‘__int32’
+ #define SIZE (sizeof(unsigned __int32))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:29:12: note: in expansion of macro ‘SIZE’
+   ('0' +  (SIZE    % 10)),
+            ^~~~
+CMakeFiles/cmTC_f83be.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_f83be.dir/HAVE_MS_UINT32.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_f83be.dir/HAVE_MS_UINT32.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_f83be/fast' failed
+make: *** [cmTC_f83be/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT32.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int32))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e5923/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e5923.dir/build.make CMakeFiles/cmTC_e5923.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e5923.dir/HAVE_MS_INT64.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_e5923.dir/HAVE_MS_INT64.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:23:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+CMakeFiles/cmTC_e5923.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_e5923.dir/HAVE_MS_INT64.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_e5923.dir/HAVE_MS_INT64.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_e5923/fast' failed
+make: *** [cmTC_e5923/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int64 failed with the following output:
+Change Dir: /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_afc54/fast"
+/usr/bin/make -f CMakeFiles/cmTC_afc54.dir/build.make CMakeFiles/cmTC_afc54.dir/build
+make[1]: 进入目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_afc54.dir/HAVE_MS_UINT64.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_afc54.dir/HAVE_MS_UINT64.c.o   -c /home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:26:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 1000)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:27:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 100)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:28:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10)%10)),
+            ^~~~
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:23:31: error: expected ‘)’ before ‘__int64’
+ #define SIZE (sizeof(unsigned __int64))
+                               ^
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:29:12: note: in expansion of macro ‘SIZE’
+   ('0' +  (SIZE    % 10)),
+            ^~~~
+CMakeFiles/cmTC_afc54.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_afc54.dir/HAVE_MS_UINT64.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_afc54.dir/HAVE_MS_UINT64.c.o] Error 1
+make[1]: 离开目录“/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_afc54/fast' failed
+make: *** [cmTC_afc54/fast] Error 2
+
+/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/CMakeFiles/CheckTypeSize/HAVE_MS_UINT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+

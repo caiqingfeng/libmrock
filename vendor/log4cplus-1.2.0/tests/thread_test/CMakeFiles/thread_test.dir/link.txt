@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/thread_test.dir/main.cxx.o  -o ../../bin/thread_test -Wl,-rpath,/home/caiqingfeng/vendors/log4cplus-1.2.0/src ../../src/liblog4cplus.so.1.2.0 -lpthread -lrt -lnsl 

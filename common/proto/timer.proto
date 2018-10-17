@@ -1,0 +1,35 @@
+// See README.txt for information and build instructions.
+
+package com.luyun.timer.shared;
+
+option java_package = "com.luyun.timer.shared";
+option java_outer_classname = "TimerProtos";
+
+enum LYTimerAction {
+	LY_TIMER_REG = 1; //register a timer
+	LY_TIMER_CAN = 2; //cancel a timer
+	LY_TIMER_FIRE = 3; // timer fired
+	LY_TIMER_RESET = 4; //reset timer
+	LY_TIMER_CONF = 5; //confirm timer = reply of above
+	LY_TIMER_SHAKE_HAND = 99; //握手协议
+}
+
+//timer message。
+message LYTimerMsg {
+    required int32 version = 1;
+    optional bytes client_id = 2; //20130510 because game server use one socket to send and one to receive, client_id used to send message back to game_svr, might change this
+    required LYTimerAction action = 3;
+    optional string server_timer_id = 4; //stringified callback function of server
+    optional string client_timer_id = 5; //first level timer id
+    optional string second_client_timer_id = 6; //second level timer id
+    optional float after = 7; //first timeout event triggered after 'after' seconds
+    optional float repeat = 8; //repeated triggered every 'repeat' seconds
+    optional int32 will_stop_at = 9; //if repeat is set, will_stop_at must be set or default value (48hours) to avoid resource leak. 
+    optional int32 client_reserved1 = 11; //reserved for client to easily fire timer events
+    optional int32 client_reserved2 = 12;
+    optional int32 client_reserved3 = 13;
+    optional int32 client_reserved4 = 14;
+    optional int32 client_reserved5 = 15;
+}
+
+

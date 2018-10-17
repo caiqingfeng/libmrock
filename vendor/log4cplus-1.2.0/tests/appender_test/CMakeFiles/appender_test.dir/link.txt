@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/appender_test.dir/main.cxx.o  -o ../../bin/appender_test -Wl,-rpath,/home/caiqingfeng/vendors/log4cplus-1.2.0/src ../../src/liblog4cplus.so.1.2.0 -lpthread -lrt -lnsl 

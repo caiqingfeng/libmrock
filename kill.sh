@@ -1,0 +1,2 @@
+killall feed
+killall netd

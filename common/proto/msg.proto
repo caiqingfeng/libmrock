@@ -1,0 +1,20 @@
+package com.luyun.msg;
+//option optimize_for = LITE_RUNTIME;
+option java_package = "com.luyun.msg";
+option java_outer_classname = "MsgProtos";
+
+//上下行消息头统一，以消息类型区分。消息类型与消息体一一对应。
+message OtaMsg {
+    required int32 version = 1;
+    required int32 msg_id = 2;
+    optional string device_id = 3;   // 客户端设备标示
+    required string uid = 4;   // 用户id  上行消息必带
+    required int64 time_stamp = 5;  // 时间戳
+    optional string server_handler = 10; //处理本消息的Server，用于load_balance
+    optional string debug_info = 100; //客户端不好调试，可以把客户端的一些信息传上来，例如Key
+}
+
+message OtaMulticast {
+    required string multicast_id = 1;
+    repeated string uid = 2;
+}

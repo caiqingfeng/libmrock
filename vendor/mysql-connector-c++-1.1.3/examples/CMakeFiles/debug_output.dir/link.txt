@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic   CMakeFiles/debug_output.dir/debug_output.cpp.o  -o debug_output  -L/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/cppconn -Wl,-rpath,/home/caiqingfeng/workspace/libmrock/vendor/mysql-connector-c++-1.1.3/cppconn ../driver/libmysqlcppconn-static.a -lmysqlclient_r -lmysqlclient -lpthread -lz -lm -lrt -latomic -ldl 
