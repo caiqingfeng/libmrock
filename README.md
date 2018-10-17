@@ -37,11 +37,11 @@ $ ./b2
 $ sudo ./b2 install   
 
 ### install log4cplus 
-$ cd vendor
-$ cd log4cplus-1.2.0 
-$ ./configure
-$ make
-$ sudo make install
+$ cd vendor  
+$ cd log4cplus-1.2.0   
+$ ./configure  
+$ make  
+$ sudo make install  
 
 ### install protobuf 2.5.0 
 $ cd vendor  
@@ -51,11 +51,11 @@ $ make
 $ sudo make install  
 
 ### install zeromq 4.0.4 
-$ cd vendor
-$ cd zeromq-4.0.4
-$ ./configure
-$ make
-$ sudo make install
+$ cd vendor  
+$ cd zeromq-4.0.4  
+$ ./configure  
+$ make  
+$ sudo make install  
 
 ### install cryptopp5.62
 $ cd vendor  
@@ -76,11 +76,11 @@ $ sudo make install
 
 
 ### install Mysql connector/c++ 1.1.3
-$ cd vendor
-$ cd mysql-connector-c++-1.1.3
-$ cmake .
-$ make
-$ sudo  make install
+$ cd vendor  
+$ cd mysql-connector-c++-1.1.3  
+$ cmake .  
+$ make  
+$ sudo  make install  
 
 if get a complaint during compiling like this：
 cannot find libmysqlclient_r.so, 
@@ -93,8 +93,8 @@ $ cd mysql-connector-c++-1.1.3
 $ scons platform=linux-gcc   
 you need copy manually ./buildscons/linux-gcc-4.6/src/lib_json/libjson_linux-gcc-4.6_libmt.a and 
  ./buildscons/linux-gcc-4.6/src/lib_json/libjson_linux-gcc-4.6_libmt.so to /usr/local/lib
-and execute
-$ cd /usr/local/lib && sudo ln –s   libjson_linux-gcc-4.6_libmt.so    libjson_linux-gcc-4.x_libmt.so
+and execute  
+$ cd /usr/local/lib && sudo ln –s   libjson_linux-gcc-4.6_libmt.so    libjson_linux-gcc-4.x_libmt.so  
 $ sudo cp –R include/json /usr/local/include  
 $ cd /usr/local/include && sudo ln –s json   jsoncpp-0.6.0-rc2  
 
